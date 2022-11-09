@@ -11,14 +11,29 @@
     font-family: "Arial Narrow", Arial, sans-serif;
     margin: 50px;
     }
+    
     /* Container */
     /* Untuk membuat semua elemen yang ada ke dalam format grid, sehingga bisa
     memainkan fitur order/urutan */
     .container {
     display: grid;
-    }
+}
 
 /* Header */
+h2 , .header p{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+
+  h2 {
+    font-size: 92px;
+  }
+ .class p {
+    font-size: medium;
+ }
 .header {
     display: grid;
     /* menampilkan hero 2x lebar features */
@@ -26,6 +41,7 @@
     "hero hero feature-1"
     "hero hero feature-2";
     }
+    
     .hero {
     grid-area: hero;
     min-height: 300px;
@@ -40,7 +56,7 @@
     
     color: white;
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
     /* align
     -content: center; */
     /* place-content menggantikan 2 line di atas */
@@ -72,14 +88,14 @@
     order: -1;
     display: grid;
     /* 1fr 2fr menunjukkan rasio ukuran text yang responsif */
-    grid
-    -template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
     
     align-items: center;
     }
 .menu.project {
         font-size: 1.2em;
-        color: #333;
+        color:#ddd;
+        
         margin-left: 50px;
         }
 .menu ul {
