@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+    img {
+    width: 100%;
+    }
+    body {
+    background: #ddd;
+    font-size: 18px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    margin: 50px;
+    }
+    /* Container */
+    /* Untuk membuat semua elemen yang ada ke dalam format grid, sehingga bisa
+    memainkan fitur order/urutan */
+    .container {
+    display: grid;
+    }
+
+/* Header */
+.header {
+    display: grid;
+    /* menampilkan hero 2x lebar features */
+    grid-template-areas:
+    "hero hero feature-1"
+    "hero hero feature-2";
+    }
+    .hero {
+    grid-area: hero;
+    min-height: 300px;
+    background-image: url(img/hero/hero-1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    font-size: 2em;
+    }
+    .features {
+    background-color: #000;
+    
+    color: white;
+    display: grid;
+    justify-content: center;
+    /* align
+    -content: center; */
+    /* place-content menggantikan 2 line di atas */
+    place-content: center;
+    text-align: center;
+    cursor: pointer; }
+    .feature-1 {
+    grid-area: feature-1;
+    background-image: url(img/project/07.jpg);
+    
+    background-size: cover;
+    
+    }
+    .feature-2 {
+    grid-area: feature-2;
+    background-image: url(img/project/08.png);
+    
+    background-size: cover;
+    
+    }
+    .features .theme {
+    font-size: 2em;
+    font-weight: 100;
+    }
+
+
+/* Navigasi */
+.menu {
+    order: -1;
+    display: grid;
+    /* 1fr 2fr menunjukkan rasio ukuran text yang responsif */
+    grid
+    -template-columns: 1fr 2fr;
+    
+    align-items: center;
+    }
+.menu.project {
+        font-size: 1.2em;
+        color: #333;
+        margin-left: 50px;
+        }
+.menu ul {
+        list-style: none;
+        display: grid;
+        /* repeat-auto-fit untuk mengatur agar tampilan menu menjadi responsif sesuai
+        ukuran windows*/
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        /* memberikan gap, agar antar menu memiliki jarak */
+        gap: 5px;
+        }
+.menu a {
+        /* mengatur yang bisa di klik seluruh kotak (bukan hanya text) */
+        display: block;
+        background-color: yellow;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        }
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 10px; */
+    }
+    .service {
+    background-color: white;
+    padding: 10px;
+    }
+    .service .icon {
+    width: 20%;
+    }
+.service h3 {
+        font-size: 1.5em;
+        }
+.service p {
+        font-weight: 200;
+        letter-spacing: 1px;
+        font-size: 1em;
+        }
+/* Product */
+.product {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 10px;
+    }
+    .product p {
+    font-weight: 200;
+    }
+    a.bt-yellow {
+    background: yellow;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    }
+    a.bt-yellow:hover {
+    background: orange;
+    text-decoration: none;
+    }
+/* Gallery */
+.gallery {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+    }
+    .gallery h2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: start;
+    margin-bottom: 20px;
+    }
+
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    }
+    .footer {
+    background-color: white;
+    padding: 10px;
+    }
+    .footer h3 {
+    font-size: 1.5em;
+    }
+    .footer p {
+    font-weight: 200;
+    letter-spacing: 1px;
+font-size: 1em;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
