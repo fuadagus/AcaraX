@@ -9,7 +9,7 @@
     background: #ddd;
     font-size: 18px;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    margin: 50px;
+    margin: 0px 50px 50px 50px;
     }
     
     /* Container */
@@ -38,6 +38,7 @@ h2 , h4, .header p{
     font-size: medium;
  }
 .header {
+    padding-top: 50px;
     display: grid;
     /* menampilkan hero 2x lebar features */
     grid-template-areas:
@@ -103,18 +104,23 @@ h2 , h4, .header p{
 
 /* Navigasi */
 .menu {
+    position: fixed;
     order: -1;
     display: grid;
     /* 1fr 2fr menunjukkan rasio ukuran text yang responsif */
     grid-template-columns: 1fr 2fr;
-    
+    z-index: 1000;
     align-items: center;
+    background-color: white;
+    height: 50px;
+    width: 100%;
     }
 .menu.project {
         font-size: 1.2em;
         color:#ddd;
-        
+        z-index: 1001;
         margin-left: 50px;
+        
         }
 .menu ul {
         list-style: none;
@@ -124,6 +130,8 @@ h2 , h4, .header p{
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         /* memberikan gap, agar antar menu memiliki jarak */
         gap: 5px;
+        z-index: 1001;
+        margin-right: 50px;
         }
 .menu a {
         /* mengatur yang bisa di klik seluruh kotak (bukan hanya text) */
@@ -137,7 +145,7 @@ h2 , h4, .header p{
 /* Services */
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
     /* gap: 10px; */
     }
     .service {
