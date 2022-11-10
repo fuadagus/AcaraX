@@ -83,14 +83,15 @@ h2 , h4, .header p{
     .feature-1 {
     grid-area: feature-1;
     background-image: url(img/project/07.jpg);
-    
-    background-size: cover;
-    
+    background-position-y: bottom;
+    background-size:cover;
     }
+    
+   
     .feature-2 {
     grid-area: feature-2;
     background-image: url(img/project/08.jpg);
-    
+    background-position-y: bottom;
     background-size: cover;
     
     }
