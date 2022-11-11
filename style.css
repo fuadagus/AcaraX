@@ -109,21 +109,30 @@ h2 , h4, .header p{
     order: -1;
     display: grid;
     /* 1fr 2fr menunjukkan rasio ukuran text yang responsif */
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.5fr 4fr;
     z-index: 1000;
     align-items: center;
     background-color: white;
     height: 50px;
     padding-left: 10px;
     padding-right: 50px;
-    width: 100%;
+    width:700px;
+    -ms-transform:rotate(90deg); /* IE 9 */
+	-ms-transform-origin: 0 0;
+    -moz-transform:rotate(90deg); /* Firefox */
+	-moz-transform-origin: 0 0;
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -webkit-transform-origin:0 0;
+    -o-transform:rotate(90deg); /* Opera */
+	-o-transform-origin: 0 0;
     }
 .menu.project {
         font-size: 1.2em;
         color:#ddd;
         z-index: 1001;
         margin-left: 50px;
-        margin-right: 50px;
+        padding-right: 10px;
+        /* margin-right: 50px; */
         }
 .menu ul {
         list-style: none;
@@ -134,7 +143,7 @@ h2 , h4, .header p{
         /* memberikan gap, agar antar menu memiliki jarak */
         gap: 5px;
         z-index: 1001;
-        padding-left: 100px;
+        /* padding-left: 100px; */
         padding-right: 50px;
         margin-right: 60px;
         }
@@ -161,8 +170,12 @@ h2 , h4, .header p{
     padding: 10px;
     }
     .service .icon {
-    width: 50%;
+    width: 25%;
     padding: 5% 25%;
+    }
+    .service .icon:hover {
+    width: 50%;
+    padding: 5% 25%; 
     }
     .service h3 {
     font-size: 1.5em;
