@@ -29,7 +29,7 @@ h2 , h4, .header p{
     z-index: 2;
     color: azure;
   }
-
+  
   h2 {
     font-size: 92px;
 
@@ -98,7 +98,7 @@ h2 , h4, .header p{
     }
     .features .theme {
     font-size: 2em;
-    font-weight: 100;
+    font-weight: bold;
     }
 
 
@@ -244,6 +244,13 @@ h2 , h4, .header p{
     font-weight: 200;
     letter-spacing: 1px;
 font-size: 1em;
+}
+
+.column{
+  padding-left: 15px;
+}
+.column h2{
+  font-size: 60px;
 }
 
 /* Copyright */
