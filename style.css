@@ -212,6 +212,8 @@ h2 , h4, .header p{
     .box .card .image img {
       max-width : 100%;
       border-radius : 15px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
     }
     
     .box .card .content {
@@ -234,6 +236,12 @@ h2 , h4, .header p{
        transition-delay: 0.2s;
       
     }
+    .box .card:hover .image img {
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+    }
+
+
 
 /* Product */
 .product {
