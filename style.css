@@ -381,10 +381,8 @@ a.bt-yellow:hover {
 .column h2 {
   font-size: 60px;
 }
-/* .footer-3 {
-  height: 180px;
-} */
-.footer-3 .map-container{
+
+.sitemap .map-container{
   height: 400px;
 }
 #map{
@@ -392,9 +390,23 @@ a.bt-yellow:hover {
   width: 100%;
 }
 
-.footer-4 img{
-  width: 40px;
+.social-media .items{
+  height: 50px;
+  /* align-items: baseline; */
 }
+.social-media img{
+  padding-top: 10px;
+  width: 40px;
+  filter: grayscale(1);
+}
+
+.social-media img:hover{
+  padding-top: 0;
+  width: 50px;
+  filter: grayscale(0);
+}
+
+
 .logo{
   padding-top: 20px;
   text-align: center;
