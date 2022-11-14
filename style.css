@@ -244,7 +244,15 @@ h2 {
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
+}
 
+.box .card .content :any-link{
+  text-decoration: none;
+  color: black;
+}
+
+.box .card .content :any-link:hover{
+  color: blueviolet;
 }
 
 .box .card:hover .content {
